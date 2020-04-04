@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+html {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: #1F1E1F;
+}
+
+.col {
+    background-color: #fff;
+    margin-right: 1px;
+}
+
+.timer {
+    width: 30%;
+    justify-self: center;
+    border: none;
+    color: white;
+    background-color: #1F1E1F;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.timer:active,
+.timer:focus {
+    outline: none;
+}
+
+.canvas {
+    background-color: #272627;
+    height: 500px;
+    width: 1000px;
+    margin: 100px auto 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.controls {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: max-content;
+    margin: 50px auto;
+    grid-row-gap: 10px;
+
+}
+
+p {
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+button {
+    border: none;
+    border-radius: none;
+    color: #fff;
+    background-color: #272627;
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-family: inherit;
+
+}
+
+
+#slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 25px;
+    background: #272627;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+#slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #fff;
+    cursor: pointer;
+}
+
+#slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #fff;
+    cursor: pointer;
+}
+
+.done {
+    background-color: aqua;
+}
+
+.swapping {
+    background-color: crimson;
+}
+
+.compare {
+    background-color: chartreuse;
+}
